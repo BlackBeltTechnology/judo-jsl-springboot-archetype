@@ -1,0 +1,4 @@
+= judo-jsl-springboot-archetype
+
+image::https://github.com/BlackBeltTechnology/judo-jsl-springboot-archetype/actions/workflows/build.yml/badge.svg?branch=develop[link="https://github.com/BlackBeltTechnology/judo-jsl-springboot-archetype/actions/workflows/build.yml" float="center"]
+
