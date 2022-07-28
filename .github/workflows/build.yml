@@ -130,7 +130,7 @@ jobs:
         run: |-
           ./mvnw -B -Dstyle.color=always \
           -Drevision=${{ steps.version.outputs.version }} \
-          -Psign-artifacts,release-judong \
+          -ParchetypeTest,sign-artifacts,release-judong \
           deploy
 
 #      - name: Release P2
