@@ -9,10 +9,13 @@ JUDO JSL Springboot application
 
 == Usage
 
+[source,bash]
+----
 mvn org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate -B \
   -DarchetypeGroupId=hu.blackbelt.judo.jsl \
   -DarchetypeArtifactId=judo-jsl-springboot-archetype \
   -DmodelName=Test \
+----
 
 ## Parameters
 
