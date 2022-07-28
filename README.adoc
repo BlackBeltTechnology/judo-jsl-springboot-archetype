@@ -2,3 +2,52 @@
 
 image::https://github.com/BlackBeltTechnology/judo-jsl-springboot-archetype/actions/workflows/build.yml/badge.svg?branch=develop[link="https://github.com/BlackBeltTechnology/judo-jsl-springboot-archetype/actions/workflows/build.yml" float="center"]
 
+== Introduction
+
+The `judo-jsl-springboot-archetype` project is an archetype project for
+JUDO JSL Springboot application
+
+== Usage
+
+mvn org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate -B \
+  -DarchetypeGroupId=hu.blackbelt.judo.jsl \
+  -DarchetypeArtifactId=judo-jsl-springboot-archetype \
+  -DmodelName=Test \
+
+## Parameters
+
+|===
+| Name | Description | Default value | Mandatory
+
+| modelName
+| The name of the model. This will be name of model.
+| <none>
+| yes
+
+| artifactId
+| The base artifact id.
+| Composited frim *groupId* and *modelName* with *projectNameSeparator*
+| no
+
+| projectNameSeparator
+| Spearator character between project name. `"."`` or `"-"`` is allowed. Tow main naming strategy can be used.
+|  Maven type: *artifactId* is a simple string separated with `"."``.
+|  no
+
+| groupId
+| It is used as groupId of maven project.
+| `com.example.app`
+| no
+
+| package
+| The model root `package``. Model dependent codes generated under that package.
+| *groupId* and *modelName*
+| no
+
+
+| version
+| Maven version. 
+| "1.0.0-SNAPSHOT"
+| no
+
+|===
