@@ -1,0 +1,10 @@
+model ${modelName}
+
+type string String(max-length = 128)
+
+entity Person {
+	field String firstName
+	field String lastName
+	derived	String fullName => self.firstName + " " \
+		+ self.lastName ;
+}
