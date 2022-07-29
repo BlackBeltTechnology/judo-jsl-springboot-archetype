@@ -1,5 +1,4 @@
 /**/target/
-/**/target-buildVariable/
 /**/bin/
 /**/.settings/
 /**/.checkstyle
@@ -8,27 +7,11 @@
 /**/lombok.config
 # original location
 !**/config/lombok.config
-/**/*.pyc
-/**/*~
-/**/gen/
-# model
-**/.runtime
 **/data/localmodel
 **/data/.config
 **/stamp.dat
 **/.index
-**/maven-metadata-local.xml
-**/format_version.dat
 .mvn/timing.properties
-/**/*-web/etc
-/**/*-web/frontend
-/**/*-web/lib
-/**/*-web/node
-/**/.credentials
-/**/.work/
-/**/*.versionsBackup
-/**/*.json-angular
-/**/*$py.class
 .output
 .metadata
 bin/
@@ -39,28 +22,14 @@ tmp/
 *~.nib
 local.properties
 .settings/
-.loadpath
-.recommenders
-.externalToolBuilders/
-*.pydevproject
 .cproject
 .factorypath
 .buildpath
 .target
-.tern-project
-.texlipse
-.springBeans
-.recommenders/
 **/.DS_Store
-wercker.env
-/**/.wercker
-**/GSModel.log*
-
 /**/*.orig
 .vscode
 .release
 /build.log
-
-.flutter
 **/.flattened-pom.xml
 

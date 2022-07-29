@@ -24,17 +24,17 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate -B \
 | Name | Description | Default value | Mandatory
 
 | modelName
-| The name of the model. This will be name of model.
+| The name of the model.
 | <none>
 | yes
 
 | artifactId
 | The base artifact id.
-| Composited frim *groupId* and *modelName* with *projectNameSeparator*
+| Composited from *groupId* and *modelName* with *projectNameSeparator*
 | no
 
 | projectNameSeparator
-| Spearator character between project name. `"."`` or `"-"`` is allowed. Tow main naming strategy can be used.
+| Spearator character between project name. `"."`` or `"-"`` is allowed.
 |  Maven type: *artifactId* is a simple string separated with `"."``.
 |  no
 
@@ -44,7 +44,7 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate -B \
 | no
 
 | package
-| The model root `package``. Model dependent codes generated under that package.
+| The model root `package``. Model dependent code will be generated under this package.
 | *groupId* and *modelName*
 | no
 

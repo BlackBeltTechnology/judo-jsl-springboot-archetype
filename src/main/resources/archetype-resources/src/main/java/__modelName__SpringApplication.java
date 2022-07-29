@@ -20,6 +20,5 @@ public class TestSpringApplication {
 	@EventListener(ApplicationReadyEvent.class)
 	public void ready() {
 		log.info("Application ready");
-
 	}
 }
