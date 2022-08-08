@@ -4,7 +4,7 @@ image::https://github.com/BlackBeltTechnology/judo-jsl-springboot-archetype/acti
 
 == Introduction
 
-The `judo-jsl-springboot-archetype` project is an archetype project for JUDO JSL Springboot application
+The judo-jsl-springboot-archetype project is an archetype project for JUDO JSL Springboot application
 
 == Usage
 
@@ -53,3 +53,11 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate -B \
 | no
 
 |===
+
+== Contributing to the project
+
+Everyone is welcome to contribute to JUDO! As a starter, please read the corresponding link:CONTRIBUTING.adoc[CONTRIBUTING] guide for details!
+
+== License
+
+This project is licensed under the https://www.eclipse.org/legal/epl-2.0/[Eclipse Public License - v 2.0].
