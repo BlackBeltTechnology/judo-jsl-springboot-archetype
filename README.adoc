@@ -6,6 +6,11 @@ image::https://github.com/BlackBeltTechnology/judo-jsl-springboot-archetype/acti
 
 The judo-jsl-springboot-archetype project is an archetype project for JUDO JSL Springboot application
 
+== Context
+
+This project is a building block of the https://github.com/BlackBeltTechnology/judo-community[judo-community] aggregator
+project. In order to better understand how this module fits into our ecosystem, please check the corresponding documentation!
+
 == Usage
 
 [source,bash]
