@@ -23,7 +23,7 @@
         <surefire-version>3.0.0-M5</surefire-version>
         <slf4j-version>1.7.36</slf4j-version>
 
-        <judo-jsl-springboot-parent-version>1.0.0.20220728_112935_22a9a1fd_develop</judo-jsl-springboot-parent-version>
+        <judo-jsl-springboot-parent-version>1.0.0.20220824_161638_ab9d8251_develop</judo-jsl-springboot-parent-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
@@ -88,7 +88,7 @@
                                     <file>${project.basedir}/src/main/resources/META-INF/maven/archetype-metadata.xml</file>
                                     <replacements>
                                         <replacement>
-                                            <token><![CDATA[(\<requiredProperty key=\"jslSpringbootVersion\"\>\<defaultValue\>)(.*)(\<\/defaultValue\>\<\/requiredProperty\>)]]></token>
+                                            <token>(\&lt;requiredProperty key=\"jslSpringbootVersion\"\&gt;\&lt;defaultValue\&gt;)(.*)(\&lt;\/defaultValue\&gt;\&lt;\/requiredProperty\&gt;)</token>
                                             <value>$1${judo-jsl-springboot-parent-version}$3</value>
                                         </replacement>
                                     </replacements>
@@ -281,4 +281,3 @@
         </profile>
     </profiles>
 </project>
-
