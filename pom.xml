@@ -23,7 +23,7 @@
         <surefire-version>3.0.0-M5</surefire-version>
         <slf4j-version>1.7.36</slf4j-version>
 
-        <judo-jsl-springboot-parent-version>1.0.0</judo-jsl-springboot-parent-version>
+        <judo-jsl-springboot-parent-version>1.0.1.20221005_234001_c50d0e92_develop</judo-jsl-springboot-parent-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
