@@ -98,6 +98,13 @@ jobs:
 ##########################
 # MAVEN BUILD START
 ##########################
+      # Phase 0 - Update template version from POM
+      - name: 🔥 Update versions in POM
+        run: |-
+          ./mvnw -B -Dstyle.color=always \
+          -Drevision=${{ steps.version.outputs.version }} \
+          -PupdateVersions \
+          validate
 
       # Phase 1 - Build and deploy to judong nexus
       - name: 🔥 Build with Maven (build, test)
