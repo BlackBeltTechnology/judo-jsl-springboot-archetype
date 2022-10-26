@@ -28,7 +28,9 @@
             <defaultValue>${artifactId.toLowerCase()}</defaultValue>
         </requiredProperty>
 
-        <requiredProperty key="jslSpringbootVersion"><defaultValue>1.0.0.20220728_112935_22a9a1fd_develop</defaultValue></requiredProperty>
+        <requiredProperty key="jslSpringbootVersion">
+            <defaultValue>1.0.1.20221021_121155_a6573c63_develop</defaultValue>
+        </requiredProperty>
 
     </requiredProperties>
 
