@@ -9,7 +9,7 @@
     <description>JUDO Specific Language Springboot Archetype</description>
 
     <properties>
-        <revision>1.0.1</revision>
+        <revision>1.0.2</revision>
         <maven>3.8.3</maven>
         <maven.version>3.8.3</maven.version>
         <project-shortname>judo-jsl-spirngboot-archetype</project-shortname>
@@ -23,7 +23,7 @@
         <surefire-version>3.0.0-M5</surefire-version>
         <slf4j-version>1.7.36</slf4j-version>
 
-        <judo-jsl-springboot-parent-version>1.0.1</judo-jsl-springboot-parent-version>
+        <judo-jsl-springboot-parent-version>1.0.2</judo-jsl-springboot-parent-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
