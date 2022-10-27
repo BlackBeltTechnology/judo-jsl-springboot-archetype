@@ -9,7 +9,7 @@
     <description>JUDO Specific Language Springboot Archetype</description>
 
     <properties>
-        <revision>1.0.2-SNAPSHOT</revision>
+        <revision>1.0.2</revision>
         <maven>3.8.3</maven>
         <maven.version>3.8.3</maven.version>
         <project-shortname>judo-jsl-spirngboot-archetype</project-shortname>
