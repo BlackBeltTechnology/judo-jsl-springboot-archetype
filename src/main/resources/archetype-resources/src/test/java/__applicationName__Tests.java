@@ -13,7 +13,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-class ${modelName}SpringApplicationTests {
+class ${applicationName}Tests {
 
 	@Autowired
 	Person.PersonDao personDao;
