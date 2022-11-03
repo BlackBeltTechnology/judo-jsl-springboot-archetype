@@ -14,7 +14,7 @@
         </requiredProperty>
 
         <requiredProperty key="applicationName">
-            <validationRegex>^[a-zA-Z0-9]+$</validationRegex>
+            <validationRegex>^[a-zA-Z]+$</validationRegex>
         </requiredProperty>
 
         <requiredProperty key="projectNameSeparator">
