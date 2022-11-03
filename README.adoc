@@ -18,8 +18,10 @@ project. In order to better understand how this module fits into our ecosystem, 
 mvn org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate -B \
   -DarchetypeGroupId=hu.blackbelt.judo.jsl \
   -DarchetypeArtifactId=judo-jsl-springboot-archetype \
-  -DgroupId=com.example.judo.app \
-  -DmodelName=Test
+  -DarchetypeVersion=1.0.4 \
+  -DgroupId=com.example \
+  -DmodelName=Hello \
+  -DapplicationName=HelloApp
 ----
 
 == Parameters
