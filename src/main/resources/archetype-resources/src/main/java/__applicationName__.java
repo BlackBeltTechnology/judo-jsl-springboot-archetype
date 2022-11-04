@@ -11,10 +11,10 @@ import org.springframework.context.event.EventListener;
 
 @SpringBootApplication
 @Slf4j
-public class TestSpringApplication {
+public class ${applicationName} {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TestSpringApplication.class, args);
+		SpringApplication.run(${applicationName}.class, args);
 	}
 
 	@EventListener(ApplicationReadyEvent.class)
