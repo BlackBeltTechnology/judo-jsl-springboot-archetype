@@ -3,5 +3,5 @@
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
     <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
     <root level="warn"/>
-    <logger name="${groupId}.${artifactId}" level="debug"/>
+    <logger name="${groupId}.${artifactId}" level="info"/>
 </configuration>
