@@ -61,7 +61,7 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate -B \
 
 | applicationName
 | The name of the generated application.
-| Composited from *modelName* with the "Application" fuffix
+| Composited from *modelName* with the "Application" suffix
 | no
 
 |===
