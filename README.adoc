@@ -20,8 +20,8 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate -B \
   -DarchetypeArtifactId=judo-jsl-springboot-archetype \
   -DarchetypeVersion=1.0.4 \
   -DgroupId=com.example \
-  -DmodelName=Hello \
-  -DapplicationName=HelloApp
+  -DartifactId=hello \
+  -DmodelName=Hello
 ----
 
 == Parameters
@@ -36,8 +36,8 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate -B \
 
 | artifactId
 | The base artifact id.
-| Composited from *groupId* and *modelName* with *projectNameSeparator*
-| no
+| <none>
+| yes
 
 | projectNameSeparator
 | Separator character between project name. `.` or `-` is allowed.
@@ -57,6 +57,11 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate -B \
 | version
 | Maven version. 
 | `1.0.0-SNAPSHOT`
+| no
+
+| applicationName
+| The name of the generated application.
+| Composited from *modelName* with the "Application" fuffix
 | no
 
 |===
