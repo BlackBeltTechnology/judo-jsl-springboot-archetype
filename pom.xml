@@ -23,7 +23,7 @@
         <surefire-version>3.0.0-M5</surefire-version>
         <slf4j-version>1.7.36</slf4j-version>
 
-        <judo-jsl-springboot-parent-version>1.0.3</judo-jsl-springboot-parent-version>
+        <judo-jsl-springboot-starter-version>1.0.0.20221108_104529_3542b707_feature_JNG_4084_add_spring_starter</judo-jsl-springboot-starter-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
@@ -96,7 +96,7 @@
                                     <replacements>
                                         <replacement>
                                             <token>(\&lt;requiredProperty key=\"jslSpringbootVersion\"\&gt;\&lt;defaultValue\&gt;)(.*)(\&lt;\/defaultValue\&gt;\&lt;\/requiredProperty\&gt;)</token>
-                                            <value>$1${judo-jsl-springboot-parent-version}$3</value>
+                                            <value>$1${judo-jsl-springboot-starter-version}$3</value>
                                         </replacement>
                                     </replacements>
                                     <regex>true</regex>
@@ -113,7 +113,7 @@
                                     <replacements>
                                         <replacement>
                                             <token>(jslSpringbootVersion\=)(.*)</token>
-                                            <value>$1${judo-jsl-springboot-parent-version}</value>
+                                            <value>$1${judo-jsl-springboot-starter-version}</value>
                                         </replacement>
                                     </replacements>
                                     <regex>true</regex>

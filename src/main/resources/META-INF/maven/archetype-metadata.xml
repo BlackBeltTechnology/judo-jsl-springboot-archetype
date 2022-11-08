@@ -6,7 +6,17 @@
     <requiredProperties>
         <requiredProperty key="groupId">
             <validationRegex>^[a-zA-Z0-9\.]+$</validationRegex>
-            <defaultValue>com.example.app</defaultValue>
+            <defaultValue>com.example</defaultValue>
+        </requiredProperty>
+
+        <requiredProperty key="artifactId">
+            <validationRegex>^[a-zA-Z0-9\-_\.]+$</validationRegex>
+            <defaultValue>${modelName.toLowerCase()}</defaultValue>
+        </requiredProperty>
+
+        <requiredProperty key="package">
+            <validationRegex>^[a-zA-Z0-9\.]+$</validationRegex>
+            <defaultValue>${groupId}${projectNameSeparator}${artifactId}</defaultValue>
         </requiredProperty>
 
         <requiredProperty key="modelName">
@@ -15,6 +25,7 @@
 
         <requiredProperty key="applicationName">
             <validationRegex>^[a-zA-Z]+$</validationRegex>
+            <defaultValue>${modelName.substring(0, 1).toUpperCase()}${modelName.substring(1)}Application</defaultValue>
         </requiredProperty>
 
         <requiredProperty key="projectNameSeparator">
@@ -22,22 +33,22 @@
             <defaultValue>.</defaultValue>
         </requiredProperty>
 
-        <requiredProperty key="artifactId">
-            <validationRegex>^[a-zA-Z0-9\-_\.]+$</validationRegex>
-            <defaultValue>${groupId}${projectNameSeparator}${modelName}</defaultValue>
-        </requiredProperty>
-
-        <requiredProperty key="package">
-            <validationRegex>^[a-zA-Z0-9\._]+$</validationRegex>
-            <defaultValue>${artifactId.toLowerCase()}</defaultValue>
-        </requiredProperty>
-
         <!-- DO NOT REFORMAT BECAUSE REPLACER PLUGIN WILL FAIL-->
-        <requiredProperty key="jslSpringbootVersion"><defaultValue>1.0.1.20221026_205808_92c6fea0_develop</defaultValue></requiredProperty>
+        <requiredProperty key="jslSpringbootVersion"><defaultValue>1.0.0.20221108_104529_3542b707_feature_JNG_4084_add_spring_starter</defaultValue></requiredProperty>
 
+        <requiredProperty key="dot">
+            <validationRegex>^\\.{1}$</validationRegex>
+            <defaultValue>.</defaultValue>
+        </requiredProperty>
     </requiredProperties>
 
   <fileSets>
+    <fileSet encoding="UTF-8">
+      <directory/>
+      <includes>
+        <include>__dot__gitignore</include>
+      </includes>
+    </fileSet>
     <fileSet filtered="true" encoding="UTF-8" packaged="true">
       <directory>src/main/java</directory>
       <includes>
@@ -48,7 +59,7 @@
       <directory>src/main/resources</directory>
       <includes>
         <include>**/*.xml</include>
-        <include>**/*.properties</include>
+        <include>**/*.yml</include>
       </includes>
     </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
