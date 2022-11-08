@@ -1,15 +1,15 @@
 spring:
   main:
     banner-mode: off
-output:
-  ansi:
-    enabled: ALWAYS
-datasource:
-  driver-class-name: org.hsqldb.jdbc.JDBCDriver
-  url: jdbc:hsqldb:mem:testdb;DB_CLOSE_DELAY=-1
-  username: sa
-  password:
-liquibase:
-  change-log: classpath:model/@judo-model-name@-liquibase_hsqldb.changelog.xml
+  output:
+    ansi:
+      enabled: ALWAYS
+  datasource:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:mem:testdb;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  liquibase:
+    change-log: classpath:model/@judo-model-name@-liquibase_hsqldb.changelog.xml
 judo:
   modelName: @judo-model-name@
