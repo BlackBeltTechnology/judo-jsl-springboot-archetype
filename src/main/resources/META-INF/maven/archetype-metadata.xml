@@ -9,6 +9,10 @@
             <defaultValue>com.example</defaultValue>
         </requiredProperty>
 
+        <requiredProperty key="modelName">
+            <validationRegex>^[a-zA-Z0-9]+$</validationRegex>
+        </requiredProperty>
+
         <requiredProperty key="artifactId">
             <validationRegex>^[a-zA-Z0-9\-_\.]+$</validationRegex>
             <defaultValue>${modelName.toLowerCase()}</defaultValue>
@@ -16,21 +20,12 @@
 
         <requiredProperty key="package">
             <validationRegex>^[a-zA-Z0-9\.]+$</validationRegex>
-            <defaultValue>${groupId}${projectNameSeparator}${artifactId}</defaultValue>
-        </requiredProperty>
-
-        <requiredProperty key="modelName">
-            <validationRegex>^[a-zA-Z0-9]+$</validationRegex>
+            <defaultValue>${groupId}.${artifactId}</defaultValue>
         </requiredProperty>
 
         <requiredProperty key="applicationName">
             <validationRegex>^[a-zA-Z]+$</validationRegex>
             <defaultValue>${modelName.substring(0, 1).toUpperCase()}${modelName.substring(1)}Application</defaultValue>
-        </requiredProperty>
-
-        <requiredProperty key="projectNameSeparator">
-            <validationRegex>^._+$</validationRegex>
-            <defaultValue>.</defaultValue>
         </requiredProperty>
 
         <!-- DO NOT REFORMAT BECAUSE REPLACER PLUGIN WILL FAIL-->
