@@ -21,7 +21,7 @@ https://documentation.judo.technology.
 
 $pound$pound Bootstrapped sources
 
-$pound$pound$pound application.properties
+$pound$pound$pound application.yml
 
 Located under: `src/main/resources`.
 
