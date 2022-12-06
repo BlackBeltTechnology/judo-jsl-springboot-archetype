@@ -1,0 +1,7 @@
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+.idea/
+**/*.iml
+transaction-logs/
+**/*.log
