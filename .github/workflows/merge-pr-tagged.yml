@@ -21,7 +21,7 @@ jobs:
         run: |
           pr=$(echo ${{ github.ref }} | cut -d/ -f4)
           echo "PR: $pr"
-          echo "PR=$pr" >> $GITHUB_OUTPUT
+          echo "pr=$pr" >> $GITHUB_OUTPUT
 
       - name: 🔢 Get version
         id: version

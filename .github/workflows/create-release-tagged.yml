@@ -36,7 +36,7 @@ jobs:
           branch=$(echo ${{ github.event.base_ref }} | cut -d/ -f3)
           echo "Version: $version"
           echo "version=$version" >> $GITHUB_OUTPUT
-          echo "BRANCH=$branch" >> $GITHUB_OUTPUT
+          echo "branch=$branch" >> $GITHUB_OUTPUT
 
       - name: Create release note
         uses: ncipollo/release-action@v1
@@ -76,7 +76,7 @@ jobs:
             message=":cross_mark: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"    
             message="${message} Release notes canceled"        
           fi
-          echo "MESSAGE=${message}" >> $GITHUB_OUTPUT
+          echo "message=${message}" >> $GITHUB_OUTPUT
 
       - name: Write message to file
         run: |-

@@ -73,7 +73,7 @@ jobs:
           fi
           echo "Version from POM: ${POM_VERSION}"
           echo "Base version from POM: ${BASE_VERSION}"
-          echo "VERSION=${BASE_VERSION}" >> $GITHUB_OUTPUT
+          echo "version=${BASE_VERSION}" >> $GITHUB_OUTPUT
 
       - name: 🏗️ Build Changelog
         id: create_changelog

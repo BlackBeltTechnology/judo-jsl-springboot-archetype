@@ -84,7 +84,7 @@ jobs:
           echo "Version from POM: ${POM_VERSION}"
           echo "Base version from POM: ${BASE_VERSION}"
           echo "Building version: ${VERSION_NUMBER}"
-          echo "VERSION=${VERSION_NUMBER}" >> $GITHUB_OUTPUT
+          echo "version=${VERSION_NUMBER}" >> $GITHUB_OUTPUT
 
 ##########################
 # MAVEN BUILD START
@@ -110,7 +110,7 @@ jobs:
           if [ "${{ job.status }}" == "canceled" ]; then
             message=":x: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"    
           fi
-          echo "MESSAGE=${message}" >> $GITHUB_OUTPUT
+          echo "message=${message}" >> $GITHUB_OUTPUT
 
       - name: 📢 Send message to discord
         uses: sarisia/actions-status-discord@v1

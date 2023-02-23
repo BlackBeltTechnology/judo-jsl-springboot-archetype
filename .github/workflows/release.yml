@@ -94,8 +94,8 @@ jobs:
           fi
           echo "Base version from POM: $BASE_VERSION"
           echo "Building version: ${VERSION_NUMBER}"
-          echo "VERSION=${VERSION_NUMBER}" >> $GITHUB_OUTPUT
-          echo "BASE-VERSION=${BASE_VERSION}" >> $GITHUB_OUTPUT
+          echo "version=${VERSION_NUMBER}" >> $GITHUB_OUTPUT
+          echo "base-version=${BASE_VERSION}" >> $GITHUB_OUTPUT
 
       - name: 🔀 Merge master branch to release branch
         run: |
@@ -143,7 +143,7 @@ jobs:
               NEXT_VERSION="${NEXT_VERSION}-SNAPSHOT"
           fi
           echo "Next version is: $NEXT_VERSION"
-          echo "VERSION=${NEXT_VERSION}" >> $GITHUB_OUTPUT
+          echo "version=${NEXT_VERSION}" >> $GITHUB_OUTPUT
 
       - name: Set next version
         run: |-
