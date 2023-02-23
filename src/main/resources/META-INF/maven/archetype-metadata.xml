@@ -29,10 +29,10 @@
         </requiredProperty>
 
         <!-- DO NOT REFORMAT BECAUSE REPLACER PLUGIN WILL FAIL-->
-        <requiredProperty key="jslSpringbootVersion"><defaultValue>1.0.4.20230221_041641_66ea6c71_develop</defaultValue></requiredProperty>
+        <requiredProperty key="jslSpringbootVersion"><defaultValue>JSL-SPRINGBOOT-PLACEHOLDER</defaultValue></requiredProperty>
 
         <!-- DO NOT REFORMAT BECAUSE REPLACER PLUGIN WILL FAIL-->
-        <requiredProperty key="jslTatamiVersion"><defaultValue>1.1.4.20230221_041625_ba9cc1a5_develop</defaultValue></requiredProperty>
+        <requiredProperty key="jslTatamiVersion"><defaultValue>JSL-TATAMI-PLACEHOLDER</defaultValue></requiredProperty>
 
         <requiredProperty key="dot">
             <validationRegex>^\\.{1}$</validationRegex>
