@@ -518,6 +518,19 @@
                         </configuration>
                         <executions>
                             <execution>
+                                <id>first</id>
+                                <goals>
+                                    <goal>update-file-header</goal>
+                                </goals>
+                                <phase>process-sources</phase>
+                                <configuration>
+                                    <licenseName>epl_v2</licenseName>
+									<excludes>
+										<exclude>**/*.json</exclude>
+									</excludes>
+                                </configuration>
+                            </execution>
+                            <execution>
                                 <id>second</id>
                                 <goals>
                                     <goal>update-project-license</goal>
