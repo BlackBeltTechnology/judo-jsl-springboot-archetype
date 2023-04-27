@@ -24,7 +24,7 @@
         <slf4j-version>1.7.36</slf4j-version>
 
         <judo-tatami-jsl-version>1.1.4.20230425_122535_5a29d16e_develop</judo-tatami-jsl-version>
-        <judo-jsl-springboot-starter-version>1.0.4.20230425_042425_c44b24cd_develop</judo-jsl-springboot-starter-version>
+        <judo-jsl-springboot-starter-version>1.0.4.20230427_041620_3957c519_develop</judo-jsl-springboot-starter-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
