@@ -1,4 +1,4 @@
-model Test;
+model ${modelName};
 
 type string String min-size : 0  max-size : 128;
 
