@@ -36,6 +36,7 @@
     <version>${version}</version>
     <properties>
         <java.version>11</java.version>
+        <judo-psm-generator-sdk-core-version>1.0.0.20230804_124609_93523ebd_develop</judo-psm-generator-sdk-core-version>
         <judo-maven-plugin.version>${jslTatamiVersion}</judo-maven-plugin.version>
         <judo-spring-boot-starter.version>${jslSpringbootVersion}</judo-spring-boot-starter.version>
         <judo-model-name>${modelName}</judo-model-name>
@@ -64,6 +65,19 @@
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <version>2.7.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <version>2.7.3</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -80,56 +94,19 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>hu.blackbelt.judo.tatami</groupId>
-                <artifactId>judo-tatami-jsl-workflow-maven-plugin</artifactId>
-                <version>${judo-maven-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>generate-models</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>parser-workflow</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <groupId>hu.blackbelt.judo</groupId>
+                <artifactId>judo-spring-maven-plugin</artifactId>
+                <version>1.0.0.20230808_040756_3cad81ba_develop</version>
                 <configuration>
-                    <sources>${basedir}/src/main/resources/model</sources>
-                    <dialects>hsqldb,postgresql</dialects>
-                    <generateSdkSpring>true</generateSdkSpring>
-                    <sdkPackagePrefix>${project.groupId}.${project.artifactId}</sdkPackagePrefix>
-                    <destination>${basedir}/target/generated-sources/model</destination>
+                    <destination>${project.basedir}/src/test/java/${packagePath}/${artifactId}</destination>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>add-source</id>
+                        <id>tejudo-spring-maven-plugin-process-model</id>
                         <phase>generate-sources</phase>
                         <goals>
-                            <goal>add-source</goal>
+                            <goal>transformerWorkflow</goal>
                         </goals>
-                        <configuration>
-                            <sources>
-                                <source>${project.basedir}/target/generated-sources/model/sdk/${judo-model-name}</source>
-                            </sources>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>add-resource</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>add-resource</goal>
-                        </goals>
-                        <configuration>
-                            <resources>
-                                <resource>
-                                    <directory>${project.basedir}/target/generated-sources/model</directory>
-                                    <targetPath>model</targetPath>
-                                </resource>
-                            </resources>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
