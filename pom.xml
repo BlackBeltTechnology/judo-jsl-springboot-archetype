@@ -10,7 +10,7 @@
 
     <properties>
         <revision>1.0.6-SNAPSHOT</revision>
-        <maven>3.8.3</maven>
+        <maven>3.9.4</maven>
         <maven.version>3.8.3</maven.version>
         <project-shortname>judo-jsl-spirngboot-archetype</project-shortname>
         <project-repositoryId>BlackBeltTechnology/judo-jsl-springboot-archetype</project-repositoryId>
