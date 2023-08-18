@@ -25,20 +25,18 @@ package ${package};
 
 import ${groupId}.api.${modelName.toLowerCase()}.${modelName.toLowerCase()}.person.Person;
 import ${groupId}.api.${modelName.toLowerCase()}.${modelName.toLowerCase()}.person.PersonDao;
-import ${groupId}.spring.*;
+import ${groupId}.spring.${modelName}DaoModules;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.stereotype.Component;
-import org.springframework.context.annotation.ComponentScan;
 
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
+@Import(${modelName}DaoModules.class)
 class ${applicationName}Tests {
 
     @Autowired

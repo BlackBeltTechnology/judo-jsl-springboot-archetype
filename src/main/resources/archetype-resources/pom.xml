@@ -98,7 +98,7 @@
                 <version>1.0.0.20230808_040756_3cad81ba_develop</version>
                 <executions>
                     <execution>
-                        <id>tejudo-spring-maven-plugin-process-model</id>
+                        <id>judo-spring-maven-plugin-process-model</id>
                         <phase>generate-sources</phase>
                         <goals>
                             <goal>transformerWorkflow</goal>
