@@ -25,6 +25,7 @@
 
         <judo-tatami-jsl-version>1.1.4.20230818_060030_3ee5f870_develop</judo-tatami-jsl-version>
         <judo-jsl-springboot-starter-version>1.0.4.20230818_060029_50304a79_develop</judo-jsl-springboot-starter-version>
+        <judo-spring-maven-plugin-version>1.0.0.20230818_060317_53a1e980_develop</judo-spring-maven-plugin-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
@@ -253,6 +254,11 @@
                                             <value>$1${judo-tatami-jsl-version}$3</value>
                                         </replacement>
 
+                                        <replacement>
+                                            <token>(\&lt;requiredProperty key=\"springMavenPluginVersion\"\&gt;\&lt;defaultValue\&gt;)(.*)(\&lt;\/defaultValue\&gt;\&lt;\/requiredProperty\&gt;)</token>
+                                            <value>$1${judo-spring-maven-plugin-version}$3</value>
+                                        </replacement>
+
                                     </replacements>
                                     <regex>true</regex>
                                 </configuration>
@@ -273,6 +279,10 @@
                                         <replacement>
                                             <token>(jslTatamiVersion\=)(.*)</token>
                                             <value>$1${judo-tatami-jsl-version}</value>
+                                        </replacement>
+                                        <replacement>
+                                            <token>(springMavenPluginVersion\=)(.*)</token>
+                                            <value>$1${judo-spring-maven-plugin-version}</value>
                                         </replacement>
                                     </replacements>
                                     <regex>true</regex>
