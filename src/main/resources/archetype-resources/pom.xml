@@ -35,7 +35,7 @@
     <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <judo-psm-generator-sdk-core-version>1.0.0.20230804_124609_93523ebd_develop</judo-psm-generator-sdk-core-version>
         <judo-maven-plugin.version>${jslTatamiVersion}</judo-maven-plugin.version>
         <judo-spring-boot-starter.version>${jslSpringbootVersion}</judo-spring-boot-starter.version>
@@ -55,6 +55,7 @@
             <groupId>hu.blackbelt.judo</groupId>
             <artifactId>judo-spring-boot-starter</artifactId>
             <version>${judo-spring-boot-starter.version}</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -69,13 +70,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
-            <version>2.7.3</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-test</artifactId>
-            <version>2.7.3</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -97,9 +96,6 @@
                 <groupId>hu.blackbelt.judo</groupId>
                 <artifactId>judo-spring-maven-plugin</artifactId>
                 <version>1.0.0.20230808_040756_3cad81ba_develop</version>
-                <configuration>
-                    <destination>${project.basedir}/src/test/java/${packagePath}/${artifactId}</destination>
-                </configuration>
                 <executions>
                     <execution>
                         <id>tejudo-spring-maven-plugin-process-model</id>
