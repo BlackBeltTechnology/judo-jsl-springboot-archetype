@@ -49,10 +49,13 @@
         </requiredProperty>
 
         <!-- DO NOT REFORMAT BECAUSE REPLACER PLUGIN WILL FAIL-->
-        <requiredProperty key="jslSpringbootVersion"><defaultValue>JSL-SPRINGBOOT-PLACEHOLDER</defaultValue></requiredProperty>
+        <requiredProperty key="jslSpringbootVersion"><defaultValue>1.0.4.20230818_060029_50304a79_develop</defaultValue></requiredProperty>
 
         <!-- DO NOT REFORMAT BECAUSE REPLACER PLUGIN WILL FAIL-->
-        <requiredProperty key="jslTatamiVersion"><defaultValue>JSL-TATAMI-PLACEHOLDER</defaultValue></requiredProperty>
+        <requiredProperty key="jslTatamiVersion"><defaultValue>1.1.4.20230818_060030_3ee5f870_develop</defaultValue></requiredProperty>
+
+        <!-- DO NOT REFORMAT BECAUSE REPLACER PLUGIN WILL FAIL-->
+        <requiredProperty key="springMavenPluginVersion"><defaultValue>1.0.0.20230808_040756_3cad81ba_develop</defaultValue></requiredProperty>
 
         <requiredProperty key="dot">
             <validationRegex>^\\.{1}$</validationRegex>

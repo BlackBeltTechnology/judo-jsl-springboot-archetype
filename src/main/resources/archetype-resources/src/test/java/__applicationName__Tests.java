@@ -23,9 +23,12 @@ package ${package};
  * #L%
  */
 
-import ${package}.${modelName.toLowerCase()}.sdk.${modelName.toLowerCase()}.${modelName.toLowerCase()}.Person;
+import ${groupId}.api.${modelName.toLowerCase()}.${modelName.toLowerCase()}.person.Person;
+import ${groupId}.api.${modelName.toLowerCase()}.${modelName.toLowerCase()}.person.PersonDao;
+import ${groupId}.spring.${modelName}DaoModules;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Import;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Optional;
@@ -33,10 +36,11 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
+@Import(${modelName}DaoModules.class)
 class ${applicationName}Tests {
 
     @Autowired
-    Person.PersonDao personDao;
+    PersonDao personDao;
 
     @Test
     void testDaoFunctions() {
