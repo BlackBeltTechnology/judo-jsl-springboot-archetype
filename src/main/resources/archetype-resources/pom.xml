@@ -36,9 +36,9 @@
     <version>${version}</version>
     <properties>
         <java.version>17</java.version>
-        <judo-psm-generator-sdk-core-version>1.0.0.20230804_124609_93523ebd_develop</judo-psm-generator-sdk-core-version>
         <judo-maven-plugin.version>${jslTatamiVersion}</judo-maven-plugin.version>
         <judo-spring-boot-starter.version>${jslSpringbootVersion}</judo-spring-boot-starter.version>
+        <judo-spring-maven-plugin.version>${springMavenPluginVersion}</judo-spring-maven-plugin.version>
         <judo-model-name>${modelName}</judo-model-name>
     </properties>
     <dependencies>
@@ -95,7 +95,7 @@
             <plugin>
                 <groupId>hu.blackbelt.judo</groupId>
                 <artifactId>judo-spring-maven-plugin</artifactId>
-                <version>1.0.0.20230808_040756_3cad81ba_develop</version>
+                <version>${judo-spring-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>judo-spring-maven-plugin-process-model</id>

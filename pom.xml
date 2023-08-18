@@ -25,6 +25,8 @@
 
         <judo-tatami-jsl-version>1.1.4.20230807_112627_50fc1c9e_develop</judo-tatami-jsl-version>
         <judo-jsl-springboot-starter-version>1.0.4.20230805_040724_0b2cfd3f_develop</judo-jsl-springboot-starter-version>
+        <judo-psm-generator-sdk-core-version>1.0.0.20230804_124609_93523ebd_develop</judo-psm-generator-sdk-core-version>
+        <judo-spring-maven-plugin-version>1.0.0.20230808_040756_3cad81ba_develop</judo-spring-maven-plugin-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
@@ -253,6 +255,11 @@
                                             <value>$1${judo-tatami-jsl-version}$3</value>
                                         </replacement>
 
+                                        <replacement>
+                                            <token>(\&lt;requiredProperty key=\"springMavenPluginVersion\"\&gt;\&lt;defaultValue\&gt;)(.*)(\&lt;\/defaultValue\&gt;\&lt;\/requiredProperty\&gt;)</token>
+                                            <value>$1${judo-spring-maven-plugin-version}$3</value>
+                                        </replacement>
+
                                     </replacements>
                                     <regex>true</regex>
                                 </configuration>
@@ -273,6 +280,10 @@
                                         <replacement>
                                             <token>(jslTatamiVersion\=)(.*)</token>
                                             <value>$1${judo-tatami-jsl-version}</value>
+                                        </replacement>
+                                        <replacement>
+                                            <token>(springMavenPluginVersion\=)(.*)</token>
+                                            <value>$1${judo-spring-maven-plugin-version}</value>
                                         </replacement>
                                     </replacements>
                                     <regex>true</regex>
