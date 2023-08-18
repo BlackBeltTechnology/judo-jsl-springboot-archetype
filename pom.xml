@@ -10,7 +10,7 @@
 
     <properties>
         <revision>1.0.6-SNAPSHOT</revision>
-        <maven>3.8.3</maven>
+        <maven>3.9.4</maven>
         <maven.version>3.8.3</maven.version>
         <project-shortname>judo-jsl-spirngboot-archetype</project-shortname>
         <project-repositoryId>BlackBeltTechnology/judo-jsl-springboot-archetype</project-repositoryId>
@@ -23,9 +23,8 @@
         <surefire-version>3.0.0-M5</surefire-version>
         <slf4j-version>1.7.36</slf4j-version>
 
-        <judo-tatami-jsl-version>1.1.4.20230807_112627_50fc1c9e_develop</judo-tatami-jsl-version>
-        <judo-jsl-springboot-starter-version>1.0.4.20230805_040724_0b2cfd3f_develop</judo-jsl-springboot-starter-version>
-        <judo-psm-generator-sdk-core-version>1.0.0.20230804_124609_93523ebd_develop</judo-psm-generator-sdk-core-version>
+        <judo-tatami-jsl-version>1.1.4.20230818_060030_3ee5f870_develop</judo-tatami-jsl-version>
+        <judo-jsl-springboot-starter-version>1.0.4.20230818_060029_50304a79_develop</judo-jsl-springboot-starter-version>
         <judo-spring-maven-plugin-version>1.0.0.20230808_040756_3cad81ba_develop</judo-spring-maven-plugin-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
