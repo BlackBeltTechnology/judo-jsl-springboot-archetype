@@ -21,11 +21,11 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <surefire-version>3.0.0-M5</surefire-version>
-        <slf4j-version>1.7.36</slf4j-version>
+        <slf4j-version>2.0.7</slf4j-version>
 
-        <judo-tatami-jsl-version>1.1.4.20230824_042044_affd037f_develop</judo-tatami-jsl-version>
-        <judo-jsl-springboot-starter-version>1.0.4.20230824_042037_c621add6_develop</judo-jsl-springboot-starter-version>
-        <judo-spring-maven-plugin-version>1.0.0.20230818_060317_53a1e980_develop</judo-spring-maven-plugin-version>
+        <judo-tatami-jsl-version>1.1.4.20230825_185035_6b2edae8_feature_JNG_5144_ReplaceLogger</judo-tatami-jsl-version>
+        <judo-jsl-springboot-starter-version>1.0.4.20230825_185037_c9167d54_feature_JNG_5144_ReplaceLogger</judo-jsl-springboot-starter-version>
+        <judo-spring-maven-plugin-version>1.0.0.20230825_185257_7f9d71f5_feature_JNG_5144_ReplaceLogger</judo-spring-maven-plugin-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
