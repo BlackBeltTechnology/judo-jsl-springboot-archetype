@@ -23,9 +23,9 @@
         <surefire-version>3.0.0-M5</surefire-version>
         <slf4j-version>2.0.7</slf4j-version>
 
-        <judo-tatami-jsl-version>1.1.4.20240215_112105_1ba185ff_feature_JNG_5526_MoveServiceFuntionsToCore</judo-tatami-jsl-version>
-        <judo-jsl-springboot-starter-version>1.0.4.20240215_112053_32dd104a_feature_JNG_5526_MoveServiceFuntionsToCore</judo-jsl-springboot-starter-version>
-        <judo-spring-maven-plugin-version>1.0.0.20240215_112546_a026206c_feature_JNG_5526_MoveServiceFuntionsToCore</judo-spring-maven-plugin-version>
+        <judo-tatami-jsl-version>1.1.4.20240216_040549_f6eec6c9_develop</judo-tatami-jsl-version>
+        <judo-jsl-springboot-starter-version>1.0.4.20240216_040603_9bb39272_develop</judo-jsl-springboot-starter-version>
+        <judo-spring-maven-plugin-version>1.0.0.20240216_040922_595777e8_develop</judo-spring-maven-plugin-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
