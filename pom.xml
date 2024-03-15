@@ -24,8 +24,8 @@
         <slf4j-version>2.0.7</slf4j-version>
 
         <judo-tatami-jsl-version>1.1.4.20240314_091551_f0d73c33_develop</judo-tatami-jsl-version>
-        <judo-jsl-springboot-starter-version>1.0.4.20240314_091551_b0157a2f_develop</judo-jsl-springboot-starter-version>
-        <judo-spring-maven-plugin-version>1.0.0.20240314_091924_7fee3a24_develop</judo-spring-maven-plugin-version>
+        <judo-jsl-springboot-starter-version>1.0.4.20240315_040746_6c880bb2_develop</judo-jsl-springboot-starter-version>
+        <judo-spring-maven-plugin-version>1.0.0.20240315_040748_0a97c6ca_develop</judo-spring-maven-plugin-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
