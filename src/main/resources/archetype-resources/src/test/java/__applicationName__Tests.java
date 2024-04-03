@@ -24,6 +24,7 @@ package ${package};
  */
 
 import ${groupId}.api.${modelName.toLowerCase()}.${modelName.toLowerCase()}.person.Person;
+import ${groupId}.api.${modelName.toLowerCase()}.${modelName.toLowerCase()}.person.PersonForCreate;
 import ${groupId}.api.${modelName.toLowerCase()}.${modelName.toLowerCase()}.person.PersonDao;
 import ${groupId}.spring.${modelName}DaoModules;
 import org.junit.jupiter.api.Test;
@@ -44,7 +45,7 @@ class ${applicationName}Tests {
 
     @Test
     void testDaoFunctions() {
-        Person createdPerson = personDao.create(Person.builder()
+        Person createdPerson = personDao.create(PersonForCreate.builder()
                 .withFirstName("FirstName")
                 .withLastName("LastName")
                 .build());
