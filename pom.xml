@@ -23,9 +23,9 @@
         <surefire-version>3.0.0-M5</surefire-version>
         <slf4j-version>2.0.7</slf4j-version>
 
-        <judo-tatami-jsl-version>1.1.4.20240403_135220_c6104761_feature_JNG_5627_Replace_the_structured_map_proxy</judo-tatami-jsl-version>
-        <judo-jsl-springboot-starter-version>1.0.4.20240403_135218_7973d7c5_feature_JNG_5627_Replace_the_structured_map_proxy</judo-jsl-springboot-starter-version>
-        <judo-spring-maven-plugin-version>1.0.0.20240403_135656_b5688008_feature_JNG_5627_Replace_the_structured_map_proxy</judo-spring-maven-plugin-version>
+        <judo-tatami-jsl-version>1.1.4.20240404_194411_56d752d4_feature_JNG_5627_Replace_the_structured_map_proxy</judo-tatami-jsl-version>
+        <judo-jsl-springboot-starter-version>1.0.4.20240404_194408_b55de918_feature_JNG_5627_Replace_the_structured_map_proxy</judo-jsl-springboot-starter-version>
+        <judo-spring-maven-plugin-version>1.0.0.20240404_194750_4d84e462_feature_JNG_5627_Replace_the_structured_map_proxy</judo-spring-maven-plugin-version>
 
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
