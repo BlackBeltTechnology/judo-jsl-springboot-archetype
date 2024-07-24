@@ -26,7 +26,6 @@
         <judo-tatami-jsl-version>1.1.4.20240723_164325_6619894d_develop</judo-tatami-jsl-version>
         <judo-jsl-springboot-starter-version>1.0.4.20240724_122653_70401b4d_feature_JNG_5851_Extend_SDK_query_customizer_with_lastItem_property_for_seek</judo-jsl-springboot-starter-version>
         <judo-spring-maven-plugin-version>1.0.0.20240724_122624_ecca864d_feature_JNG_5851_Extend_SDK_query_customizer_with_lastItem_property_for_seek</judo-spring-maven-plugin-version>
-
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
 
