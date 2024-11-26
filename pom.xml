@@ -20,17 +20,19 @@
 
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <surefire-version>3.0.0-M5</surefire-version>
-        <slf4j-version>2.0.7</slf4j-version>
+        <surefire-version>3.5.1</surefire-version>
+        <slf4j-version>2.0.16</slf4j-version>
 
-        <judo-tatami-jsl-version>1.1.4.20241122_163741_c565f529_develop</judo-tatami-jsl-version>
-        <judo-jsl-springboot-starter-version>1.0.4.20241122_163815_cd665753_develop</judo-jsl-springboot-starter-version>
-        <judo-spring-maven-plugin-version>1.0.0.20241122_164326_e0a090c8_develop</judo-spring-maven-plugin-version>
+        <judo-tatami-jsl-version>1.1.4.20241126_020631_055f2795_feature_JNG_5995_UpdateEclipse</judo-tatami-jsl-version>
+        <judo-jsl-springboot-starter-version>1.0.4.20241126_020626_196a27a3_feature_JNG_5995_UpdateEclipse</judo-jsl-springboot-starter-version>
+        <judo-spring-maven-plugin-version>1.0.0.20241126_021004_a9425995_feature_JNG_5995_UpdateEclipse</judo-spring-maven-plugin-version>
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
 
         <!--suppress UnresolvedMavenProperty -->
         <logback-test-config>${maven.multiModuleProjectDirectory}/logback-test.xml</logback-test-config>
+        <logback-version>1.5.12</logback-version>
+        <lombok-version>1.18.34</lombok-version>
 
         <!-- Code Quality-->
         <sonar-maven-plugin-version>3.9.1.2184</sonar-maven-plugin-version>
@@ -38,7 +40,7 @@
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.language>java</sonar.language>
         <sonar.java.source>${java.version}</sonar.java.source>
-        <jacoco.version>0.8.8</jacoco.version>
+        <jacoco.version>0.8.12</jacoco.version>
     </properties>
 
     <developers>
@@ -79,7 +81,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.11</version>
+            <version>${logback-version}</version>
         </dependency>
     </dependencies>
 
@@ -127,7 +129,7 @@
                         <dependency>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>1.18.24</version>
+                            <version>${lombok-version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>
