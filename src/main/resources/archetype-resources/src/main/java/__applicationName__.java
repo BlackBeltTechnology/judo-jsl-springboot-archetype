@@ -28,8 +28,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
+import org.springframework.context.annotation.Import;
+
+import ${groupId}.spring.${modelName}DaoModules;
 
 @SpringBootApplication
+@Import(${modelName}DaoModules.class)
 @Slf4j
 public class ${applicationName} {
 
