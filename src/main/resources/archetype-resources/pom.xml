@@ -28,7 +28,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.0</version>
+        <version>${springbootVersion}</version>
         <relativePath/>
     </parent>
     <groupId>${groupId}</groupId>
@@ -36,36 +36,41 @@
     <version>${version}</version>
     <properties>
         <java.version>21</java.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <spring-boot.version>${springbootVersion}</spring-boot.version>
         <judo-maven-plugin.version>${jslTatamiVersion}</judo-maven-plugin.version>
         <judo-spring-boot-starter.version>${jslSpringbootVersion}</judo-spring-boot-starter.version>
         <judo-spring-maven-plugin.version>${springMavenPluginVersion}</judo-spring-maven-plugin.version>
+        <antlr-runtime-version>3.2</antlr-runtime-version>
         <judo-model-name>${modelName}</judo-model-name>
     </properties>
+<!--    <dependencyManagement>-->
+<!--        <dependencies>-->
+<!--            <dependency>-->
+<!--                <groupId>org.antlr</groupId>-->
+<!--                <artifactId>antlr-runtime</artifactId>-->
+<!--                <version>${antlr-runtime-version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-dependencies</artifactId>-->
+<!--                <type>pom</type>-->
+<!--                <version>${spring-boot.version}</version>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+<!--        </dependencies>-->
+<!--    </dependencyManagement>-->
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>hu.blackbelt.judo</groupId>
-            <artifactId>judo-spring-boot-starter</artifactId>
-            <version>${judo-spring-boot-starter.version}</version>
-            <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.36</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.hsqldb</groupId>
-            <artifactId>hsqldb</artifactId>
+            <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
 
         <dependency>
@@ -75,8 +80,32 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-test</artifactId>
+            <artifactId>spring-boot-test-autoconfigure</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>hu.blackbelt.judo</groupId>
+            <artifactId>judo-spring-boot-starter</artifactId>
+            <version>${judo-spring-boot-starter.version}</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.38</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
         </dependency>
     </dependencies>
     <build>
