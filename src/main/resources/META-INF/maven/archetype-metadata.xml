@@ -49,6 +49,9 @@
         </requiredProperty>
 
         <!-- DO NOT REFORMAT BECAUSE REPLACER PLUGIN WILL FAIL-->
+        <requiredProperty key="springbootVersion"><defaultValue>3.5.0</defaultValue></requiredProperty>
+
+        <!-- DO NOT REFORMAT BECAUSE REPLACER PLUGIN WILL FAIL-->
         <requiredProperty key="jslSpringbootVersion"><defaultValue>1.0.4-SNAPSHOT</defaultValue></requiredProperty>
 
         <!-- DO NOT REFORMAT BECAUSE REPLACER PLUGIN WILL FAIL-->
