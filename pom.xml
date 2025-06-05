@@ -18,14 +18,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <src.dir>src/main</src.dir>
 
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <surefire-version>3.5.1</surefire-version>
         <slf4j-version>2.0.16</slf4j-version>
 
-        <judo-tatami-jsl-version>1.1.4.20250603_042002_f66237f7_develop</judo-tatami-jsl-version>
-        <judo-jsl-springboot-starter-version>1.0.4.20250603_042001_3a68e016_develop</judo-jsl-springboot-starter-version>
-        <judo-spring-maven-plugin-version>1.0.0.20250603_073220_3c0f75c3_develop</judo-spring-maven-plugin-version>
+        <judo-tatami-jsl-version>1.1.4.20250605_181050_ea653ac7_feature_JNG_6310_UpdateEpsilon</judo-tatami-jsl-version>
+        <judo-jsl-springboot-starter-version>1.0.4.20250605_181115_d8ad028f_feature_JNG_6310_UpdateEpsilon</judo-jsl-springboot-starter-version>
+        <judo-spring-maven-plugin-version>1.0.0.20250605_181424_5280cf10_feature_JNG_6310_UpdateEpsilon</judo-spring-maven-plugin-version>
+        <springboot-version>3.5.0</springboot-version>
         <generatedProjectDirectory>${project.build.testOutputDirectory}/projects/basic/project/</generatedProjectDirectory>
         <integrationTestDirectory>${project.build.testOutputDirectory}/it/</integrationTestDirectory>
 
@@ -246,6 +247,11 @@
                                     <file>${project.basedir}/src/main/resources/META-INF/maven/archetype-metadata.xml</file>
                                     <replacements>
                                         <replacement>
+                                            <token>(\&lt;requiredProperty key=\"springbootVersion\"\&gt;\&lt;defaultValue\&gt;)(.*)(\&lt;\/defaultValue\&gt;\&lt;\/requiredProperty\&gt;)</token>
+                                            <value>$1${springboot-version}$3</value>
+                                        </replacement>
+
+                                        <replacement>
                                             <token>(\&lt;requiredProperty key=\"jslSpringbootVersion\"\&gt;\&lt;defaultValue\&gt;)(.*)(\&lt;\/defaultValue\&gt;\&lt;\/requiredProperty\&gt;)</token>
                                             <value>$1${judo-jsl-springboot-starter-version}$3</value>
                                         </replacement>
@@ -273,6 +279,11 @@
                                 <configuration>
                                     <file>${project.basedir}/src/test/resources/projects/basic/archetype.properties</file>
                                     <replacements>
+                                        <replacement>
+                                            <token>(springbootVersion\=)(.*)</token>
+                                            <value>$1${springboot-version}</value>
+                                        </replacement>
+
                                         <replacement>
                                             <token>(jslSpringbootVersion\=)(.*)</token>
                                             <value>$1${judo-jsl-springboot-starter-version}</value>
@@ -331,7 +342,7 @@
                     <plugin>
                         <groupId>org.simplify4u.plugins</groupId>
                         <artifactId>sign-maven-plugin</artifactId>
-                        <version>1.0.1</version>
+                        <version>1.1.0</version>
                         <executions>
                             <execution>
                                 <goals>
