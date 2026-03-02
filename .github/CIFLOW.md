@@ -36,7 +36,7 @@ gitGraph
     merge bugfix/JNG-4 id: "merge-fix"
     checkout develop
     merge release/1.0 id: "merge-release-to-dev"
-    checkout main
+    checkout master
     merge release/1.0 id: "v1.0" tag: "v1.0"
 ```
 
