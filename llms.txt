@@ -1,0 +1,44 @@
+# JUDO JSL Springboot Archetype
+
+> A Maven Archetype that scaffolds Spring Boot applications with JUDO JSL (JUDO Specific Language) support, generating ready-to-build projects with model-driven code generation for DAOs, APIs, Spring configuration, and Liquibase database migrations.
+
+Key facts:
+- Java 21, Maven 3.9.4+ with archetype-packaging extension
+- Single-module project — the archetype template lives under `src/main/resources/archetype-resources/`
+- Template engine: Apache Velocity with `__paramName__` filename substitution and `${symbol_pound}`/`${symbol_dollar}` escaping
+- Generated projects use Spring Boot 3.5.0 with `judo-spring-maven-plugin` for model-to-code generation
+- Part of the [judo-community](https://github.com/BlackBeltTechnology/judo-community) ecosystem
+- License: Eclipse Public License 2.0 (EPL-2.0)
+
+## Docs
+
+- [README.md](README.md): Project overview, usage instructions, archetype parameters, and generated project structure
+- [AGENTS.md](AGENTS.md): Developer guide with build commands, directory structure, coding conventions, and important notes
+- [CONTRIBUTING.md](CONTRIBUTING.md): Development setup and contribution guidelines
+- [.github/CIFLOW.md](.github/CIFLOW.md): CI/CD workflow documentation with Mermaid diagrams
+
+## Core Files
+
+- [pom.xml](pom.xml): Main POM — archetype packaging, dependency version properties, build profiles (updateVersions, archetypeTest, release)
+- [src/main/resources/META-INF/maven/archetype-metadata.xml](src/main/resources/META-INF/maven/archetype-metadata.xml): Archetype descriptor — defines parameters (modelName, groupId, etc.), validation regexes, default values, and file sets
+- [src/main/resources/archetype-resources/pom.xml](src/main/resources/archetype-resources/pom.xml): Velocity template POM for generated projects — Spring Boot parent, JUDO plugin configuration
+
+## Archetype Template Files
+
+- [src/main/resources/archetype-resources/src/main/java/__applicationName__.java](src/main/resources/archetype-resources/src/main/java/__applicationName__.java): Template for the Spring Boot main class
+- [src/main/resources/archetype-resources/src/main/resources/model/__modelName__.jsl](src/main/resources/archetype-resources/src/main/resources/model/__modelName__.jsl): Sample JSL model with Person entity demonstrating the DSL syntax
+- [src/main/resources/archetype-resources/src/main/resources/application.yml](src/main/resources/archetype-resources/src/main/resources/application.yml): Template Spring config — HSQLDB datasource, Liquibase changelog, JUDO model name
+- [src/main/resources/archetype-resources/README.md](src/main/resources/archetype-resources/README.md): Template README for generated projects
+
+## Integration Tests
+
+- [src/test/resources/projects/basic/archetype.properties](src/test/resources/projects/basic/archetype.properties): Test parameters (modelName=Shop) for archetype generation and build verification
+- [src/test/resources/projects/basic/goal.txt](src/test/resources/projects/basic/goal.txt): Maven goal to run on the generated test project
+
+## Optional
+
+- [.github/workflows/build.yml](.github/workflows/build.yml): CI build workflow
+- [.github/workflows/release.yml](.github/workflows/release.yml): Release workflow
+- [LICENSE.txt](LICENSE.txt): EPL-2.0 license text
+- [logback-test.xml](logback-test.xml): Test logging configuration
+- [.mvn/jvm.config](.mvn/jvm.config): JVM flags — 2GB heap, UTF-8, --add-opens for Java 21
