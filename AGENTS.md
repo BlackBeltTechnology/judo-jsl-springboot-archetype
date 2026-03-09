@@ -2,6 +2,7 @@
 
 ## Project Overview
 
+
 **Repository:** BlackBeltTechnology/judo-jsl-springboot-archetype
 **License:** Eclipse Public License 2.0 (EPL-2.0)
 **Java Version:** 21
@@ -11,6 +12,17 @@
 2. Part of the [judo-community](https://github.com/BlackBeltTechnology/judo-community) ecosystem — provides the project bootstrapping entry point for JUDO-based Spring Boot apps
 3. Generated projects use **model-driven architecture**: developers write `.jsl` domain model files, and the `judo-spring-maven-plugin` generates DAOs, APIs, Spring configuration, and Liquibase database migrations at build time
 4. Template files use Apache Velocity syntax with special conventions: `__paramName__` filenames, `${symbol_pound}`/`${symbol_dollar}`/`${symbol_escape}` for escaping, and `__dot__` prefix for dotfiles
+
+## Code Instructions
+
+1. First think through the problem, read the codebase for relevant files.
+2. Before you make any major changes, check in with me and I will verify the plan.
+3. Please every step of the way just give me a high level explanation of what changes you made.
+4. Make every task and code change you do as simple as possible. We want to avoid making any massive or complex changes. Every change should impact as little code as possible. Everything is about simplicity.
+5. Maintain a documentation file that describes how the architecture of the app works inside and out.
+6. Never speculate about code you have not opened. If the user references a specific file, you MUST read the file before answering. Make sure to investigate and read relevant files BEFORE answering questions about the codebase. Never make any claims about code before investigating unless you are certain of the correct answer - give grounded and hallucination-free answers.
+7. For implementation use TDD (Test-Driven Development): write or update tests first to define the expected behaviour, verify they fail, then write the minimal implementation to make them pass.
+8. Use DRY (Don't Repeat Yourself): extract reusable logic into separate classes, utilities, or components. If the same pattern appears in multiple places, refactor it into a shared helper.
 
 ## Directory Structure
 
