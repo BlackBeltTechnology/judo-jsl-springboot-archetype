@@ -37,3 +37,8 @@ local.properties
 .gemini
 .opencode
 .agent
+
+# --- pi generated state (JNG-6349): never commit ---
+.pi/dashboard/
+.pi/memory/
+.pi/**/*.log
